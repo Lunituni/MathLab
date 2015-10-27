@@ -1,0 +1,16 @@
+%FAHR_TO_CELS
+%Calculates from Fahrenheit to celsius(and vice versa) and returns the calculated value.
+
+clear
+choice = menu('Welcome to the temeprature calculator! Please chose from the following: ','1. Fahrenheit to celsius','2. Celsius to fahrenheit', '3. End the rutine');
+inputVar = input('Insert the number which you want to translate: ');
+if choice == 1
+    calcVar = (inputVar*9)/5 + 32;
+    disp('The converted value is: ' + calcVar)
+elseif choice == 2
+    calcVar = ((inputVar-32)*5)/9;
+    disp('The converted value is: ' + calcVar)
+end
+
+
+
