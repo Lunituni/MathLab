@@ -3,11 +3,13 @@
 
 clear
 choice = menu('Welcome to the temeprature calculator! Please chose from the following: ','1. Fahrenheit to celsius','2. Celsius to fahrenheit', '3. End the rutine');
-inputVar = input('Insert the number which you want to translate: ');
+
 if choice == 1
+    inputVar = input('Insert the number which you want to translate: ');
     calcVar = (inputVar*9)/5 + 32;
     disp('The converted value is: ' + calcVar)
 elseif choice == 2
+    inputVar = input('Insert the number which you want to translate: ');
     calcVar = ((inputVar-32)*5)/9;
     disp('The converted value is: ' + calcVar)
 end
